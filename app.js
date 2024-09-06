@@ -16,7 +16,7 @@ app.use(express.json())
 dotenv.config({path:'./env/.env'})
 
 //para setear las cookies
-//app.use(cookieParser)
+app.use(cookieParser())
 
 app.use('/', require('./routes/route'))
 
