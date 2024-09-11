@@ -17,8 +17,14 @@ router.get('/register', (req, res)=>{
     res.render('register')
 })
 
+router.get('/upLoad',(req, res)=>{
+    res.render('upLoad')
+} )
+
 //Router para los cotroller
 router.post('/register', authController.register)
 router.post('/login', authController.login)
+router.post('/upLoad', authController.login)
+
 module.exports = router
 
